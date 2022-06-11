@@ -4,7 +4,7 @@ int main(void){
 	int a, b, c;
 	cin >> a >> b >> c;
 	for(int i=1; i<=c; i++){
-		if((i%(a*b))==0){
+		if(((i%b)==0) && ((i%a)==0)){
 			cout << "FizzBuzz" << endl;;
 		}else if((i%(a))==0){
 			cout << "Fizz" << endl;
