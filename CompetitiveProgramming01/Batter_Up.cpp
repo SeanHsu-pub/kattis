@@ -1,11 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(void){
-	int n, a;	//還沒打好!! 
-	float b=0.0;
+    int n, a=0;
+	double b=0.0;
 	cin >> n;
 	for(int i=0; i<n; i++){
-		float t;
+		int t;
 		cin >> t;
 		if(t>=0){
 			a++;
@@ -13,7 +13,7 @@ int main(void){
 		}
 	}
 	cout << fixed;
-	cout.precision(16);
-	cout << b/(float)a;
+	cout.precision(20);
+	cout << b/a;
 	return 0;
 }
